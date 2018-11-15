@@ -1,10 +1,14 @@
 # Speaker Recognition using Vector Quantization
+[Speaker recognition](https://en.wikipedia.org/wiki/Speaker_recognition) is the identification of a person from characteristics of voices (voice biometrics). Speaker recognition systems fall into two categories: **text-dependent** and **text-independent**. If the text must be the same for enrollment and verification this is called text-dependent recognition; text-independent systems are most often used for speaker identification as they require very little if any cooperation by the speaker. <br>
+Vector Quantization is a text-independent method. Features are extracted using MFCC, and VQ is impelmented by clustering.
 
 ## Feature extracting
 - Mel-frequency cepstrum (MFCC)
 - See [python_speech_features](https://python-speech-features.readthedocs.io/en/latest/)
 
 ## Vector Quantization
+The basic idea for VQ is to cluster the features from a speaker to generate some codewords, which consist a codebook. A unknown utter is compared with all the codebooks, with an objective of finding the minimal distortion measure.
+
 - Some terms and how to implement
     - **Codebook**: each category (speaker) has its own codebook, which is a set of codewords
     - **Codeword**: for each speaker, its feature vectors are clustered, and a codeword is the center of a cluster

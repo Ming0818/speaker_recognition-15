@@ -8,7 +8,7 @@
     - **Codebook**: each category (speaker) has its own codebook, which is a set of codewords
     - **Codeword**: for each speaker, its feature vectors are clustered, and a codeword is the center of a cluster
     - **Pridict an unknown speaker**: compare with each codebook
-        - a testing utter <img src="https://latex.codecogs.com/gif.latex?X={x_1, x_2, \ldots, x_T}"/>, a codebook <img src="https://latex.codecogs.com/gif.latex?C={c_1, c_2, \ldots, c_M}" />
+        - a testing utter <img src="https://latex.codecogs.com/gif.latex?\inline&space;X=\{x_1,&space;x_2,&space;\ldots,&space;x_T\}" title="X=\{x_1, x_2, \ldots, x_T\}" />, a codebook <img src="https://latex.codecogs.com/gif.latex?\inline&space;C=\{c_1,&space;c_2,&space;\ldots,&space;c_M\}" title="C=\{c_1, c_2, \ldots, c_M\}" />
         - the distance between a code vector x and a codebook is defined as 
           <img src="https://latex.codecogs.com/gif.latex?d(x_i, C) = \min_{c_j} d(x_i, c_j)"/>
         - the average distortion of X and C is

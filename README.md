@@ -23,11 +23,14 @@ The basic idea for VQ is to cluster the features from a speaker to generate some
   - K-means
   - Gaussian Mixture Model (GMM)
   
+## Scalability
+Since it is implemented using Spark, it works on larger dataset. However, since the limitition of [Databricks](https://databricks.com) community edition, a subset of the VoxCeleb1 (145,265 utterances) is used.
+  
 ## Results
 - Accuracy
     - In the 2-speaker example, the identification rate is 100%
     - In the tiny example (5 speakers), the identification rate is 97.64%
-    - In the larger scale example, the identification rate is 92.11%
+    - In the larger scale example (50 speakers, 6,242 utterances, 2.45 million code vectors for training samples), the identification rate is 92.11%
 - Choice of codebook size
     - With larger scale, a larger codebook size (K selection in clustering) increases the ID rate
   

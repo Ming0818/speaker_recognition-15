@@ -23,5 +23,13 @@ The basic idea for VQ is to cluster the features from a speaker to generate some
   - K-means
   - Gaussian Mixture Model (GMM)
   
+## Results
+- Accuracy
+    - In the 2-speaker example, the identification rate is 100%
+    - In the tiny example (5 speakers), the identification rate is 97.64%
+    - In the larger scale example, the identification rate is 92.11%
+- Choice of codebook size
+    - With larger scale, a larger codebook size (K selection in clustering) increases the ID rate
+  
 ## Notes on running environment
 [Databricks](https://databricks.com) community edition (free) is used.

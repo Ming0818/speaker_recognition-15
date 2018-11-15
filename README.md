@@ -1,7 +1,7 @@
 # Speaker Recognition using Vector Quantization
 [Speaker recognition](https://en.wikipedia.org/wiki/Speaker_recognition) is the identification of a person from characteristics of voices (voice biometrics). Speaker recognition systems fall into two categories: **text-dependent** and **text-independent**. If the text must be the same for enrollment and verification this is called text-dependent recognition; text-independent systems are most often used for speaker identification as they require very little if any cooperation by the speaker. <br>
 Vector Quantization is a text-independent method. Features are extracted using MFCC, and VQ is impelmented by clustering. <br>
-The dataset use for this project is [VoxCeleb](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/), which is a large scale audio-visual dataset of human speech. To make the project scalable, it is implemented using [Spark](https://spark.apache.org) (see [Spark SQL and DataFrame](https://spark.apache.org/sql/), [Spark MLlib]https://spark.apache.org/mllib/) for API and library used in this project).
+The dataset use for this project is [VoxCeleb](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/), which is a large scale audio-visual dataset of human speech. To make the project scalable, it is implemented using [Spark](https://spark.apache.org) (see [Spark SQL and DataFrame](https://spark.apache.org/sql/), [Spark MLlib](https://spark.apache.org/mllib/) for API and library used in this project).
 
 ## Feature extracting
 - Mel-frequency cepstrum (MFCC)
